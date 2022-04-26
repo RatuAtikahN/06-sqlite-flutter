@@ -23,7 +23,8 @@ class DBHelper {
   }
 
   setDB() async {
-    io.Directory directory = await getApplicationDocumentsDirectory();
+    var applicationDocumentsDirectory = getApplicationDocumentsDirectory();
+    io.Directory directory = await applicationDocumentsDirectory;
     String path = join(directory.path, 'item.db');
     var db = await openDatabase(path, version: 1, onCreate: _onCreate);
     return db;

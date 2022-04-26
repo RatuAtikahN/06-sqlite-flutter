@@ -31,7 +31,7 @@ class _ItemListState extends State<ItemList> {
             padding: const EdgeInsets.all(10.0),
             child: ListTile(
               leading: const CircleAvatar(
-                backgroundColor: Colors.blueGrey,
+                backgroundColor: Colors.brown,
                 child: Icon(Icons.group),
               ),
               title: Text(
